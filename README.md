@@ -13,7 +13,7 @@ For this challenge, an initial code `index.html`, `reset.css` and `styles.css` w
 
 From this, we needed to:
 
-> 1. [TO-DO] Add:
+> 1. Add:
 > - Number of followers of the user
 > - Number of people the user is following
 > 2. [TO-DO] Add:
@@ -94,7 +94,7 @@ Para este desafio, foi disponibilizado um código inicial `index.html`, `reset.c
 
 A partir disso, foram feitas algumas solicitações:
 
-> 1. [TO-DO] Adicionar:
+> 1. Adicionar:
 > - Número de seguidores do usuário
 > - Número de pessoas que o usuário está seguindo
 > 2. [TO-DO] Adicionar:
