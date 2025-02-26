@@ -97,6 +97,10 @@ main {
   align-items: center;
 }
 
+.container .profile-data .info img {
+  border-radius: 50%;
+}
+
 .container .profile-data .info .data {
   padding: 40px;
   width: 50%;
@@ -122,6 +126,31 @@ main {
 
 .container .profile-data .info p strong {
   font-weight: 700;
+}
+
+/* EVENTS */
+
+.container .profile-data .events {
+  padding: 50px 0 0;
+}
+
+.container .profile-data .events h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container .profile-data .events ul li {
+  margin: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.container .profile-data .events ul li a strong {
+  color: black;
+  font-weight: 700;
+}
+
+.container .profile-data .events ul li a:hover strong {
+  color: hotpink;
 }
 
 /* REPOSITORIES */
