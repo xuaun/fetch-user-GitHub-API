@@ -16,7 +16,7 @@ From this, we needed to:
 > 1. Add:
 > - Number of followers of the user
 > - Number of people the user is following
-> 2. [TO-DO] Add:
+> 2. Add:
 > - Information of the last 10 events (CreatEvent & PushEvent) of the user on GitHub
 > 3. [TO-DO] Add:
 > - Number of forks of the repository
@@ -97,7 +97,7 @@ A partir disso, foram feitas algumas solicitações:
 > 1. Adicionar:
 > - Número de seguidores do usuário
 > - Número de pessoas que o usuário está seguindo
-> 2. [TO-DO] Adicionar:
+> 2. Adicionar:
 > - Informações dos últimos 10 eventos (CreatEvent & PushEvent) do usuário no GitHub
 > 3. [TO-DO] Adicionar:
 > - Quantidade de forks do repositório
