@@ -2,7 +2,7 @@ const screen = {
   userProfile: document.querySelector(".profile-data"),
   renderUser(userData) {
     this.userProfile.innerHTML = `<div class="info">
-        <a href="${userData.html_url}" target="_blank">
+        <a href="${userData.userHtml}" target="_blank">
           <img src="${
             userData.avatarUrl
           }" alt="Foto de perfil no GitHub do usuário" />

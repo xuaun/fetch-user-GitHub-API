@@ -31,6 +31,7 @@ function validateInput(userNick) {
 
 async function getUserData(userNick) {
   const userResponse = await getUser(userNick);
+  // console.log(userResponse) // see API output
   const reposResponse = await getRepos(userNick);
 
   if (reposResponse.message === "Not Found") {
