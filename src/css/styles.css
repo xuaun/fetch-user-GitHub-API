@@ -120,6 +120,10 @@ main {
   line-height: 23px;
 }
 
+.container .profile-data .info p strong {
+  font-weight: 700;
+}
+
 /* REPOSITORIES */
 
 .container .profile-data .repositories {
