@@ -10,6 +10,7 @@ const user = {
   following: "",
   events: [],
   repositories: [],
+  watchers: [],
   setInfo(githubUser) {
     this.userHtml = githubUser.html_url;
     this.avatarUrl = githubUser.avatar_url;
@@ -33,15 +34,16 @@ const user = {
       } else if (eventsType[1] === event.type && total < eventsQuantity) {
         this.events.push({
           repositoryName: event.repo.name,
-          repositoryUrl: event.repo.html_url,
+          repositoryUrl: event.repo.url,
           commit: event.payload.commits[0].message,
         });
         total++;
       }
     });
   },
-  setRepositories(repos) {
+  setRepositories(repos, watchers) {
     this.repositories = repos;
+    this.watchers = watchers;
   },
 };
 

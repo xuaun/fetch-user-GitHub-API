@@ -1,6 +1,7 @@
 import { getUser } from "./services/user.js";
 import { getEvents } from "./services/events.js";
 import { getRepos } from "./services/repositories.js";
+import { getWatchers } from "./services/watchers.js";
 
 import { user } from "./objects/user.js";
 import { screen } from "./objects/screen.js";
@@ -34,6 +35,7 @@ async function getUserData(userNick) {
   const userResponse = await getUser(userNick);
   const eventsResponse = await getEvents(userNick);
   const reposResponse = await getRepos(userNick);
+  const watchersResponse = await getWatchers(reposResponse);
 
   if (reposResponse.message === "Not Found") {
     alert("Usuário não encontrado.");
@@ -43,7 +45,7 @@ async function getUserData(userNick) {
 
   user.setInfo(userResponse);
   user.setEvents(eventsResponse);
-  user.setRepositories(reposResponse);
+  user.setRepositories(reposResponse, watchersResponse);
 
   screen.renderUser(user);
 }

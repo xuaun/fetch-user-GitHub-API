@@ -38,8 +38,19 @@ const screen = {
     }
 
     let repositoriesItems = "";
-    userData.repositories.forEach((repo) => {
-      repositoriesItems += `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>`;
+    userData.repositories.forEach((repo, index) => {
+      repositoriesItems += `<li>
+        <a href="${repo.html_url}" target="_blank">${repo.name}
+          <div class="status">
+            <div class="status-item">🍴 ${repo.forks_count}</div>
+            <div class="status-item">⭐ ${repo.stargazers_count}</div>
+            <div class="status-item">👀 ${
+              userData.watchers[index].length ?? "0"
+            }</div>
+            <div class="status-item">👨‍💻 ${repo.language ?? "Indefinido"}</div>
+          </div>
+        </a>
+      </li>`;
     });
 
     if (userData.repositories.length > 0) {

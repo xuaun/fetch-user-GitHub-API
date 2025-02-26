@@ -177,6 +177,7 @@ main {
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+  color: purple;
 }
 
 .container .profile-data .repositories ul li a:hover {
@@ -186,6 +187,21 @@ main {
 
 .container .profile-data.hide {
   display: none;
+}
+
+/* STATUS */
+
+.status {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.status-item {
+  background-color: plum;
+  border-radius: 10px;
+  padding: 5px;
+  color: ghostwhite;
 }
 
 /* MEDIA QUERY */

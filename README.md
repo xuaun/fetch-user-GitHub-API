@@ -18,7 +18,7 @@ From this, we needed to:
 > - Number of people the user is following
 > 2. Add:
 > - Information of the last 10 events (CreatEvent & PushEvent) of the user on GitHub
-> 3. [TO-DO] Add:
+> 3. Add:
 > - Number of forks of the repository
 > - Number of stars of the repository
 > - Number of watchers of the repository
@@ -68,10 +68,19 @@ From this, we needed to:
 
 ### What I learned
 
-
+In this project I was able to practice writing JavaScript codes and using APIs to render information on the screen.
 
 ```js
+import { baseUrl } from "../variables.js";
 
+async function getUser(userNick) {
+  const url = `${baseUrl}${userNick}`;
+  const response = await fetch(url);
+
+  return await response.json();
+}
+
+export { getUser };
 ```
 
 ## Author
@@ -99,7 +108,7 @@ A partir disso, foram feitas algumas solicitações:
 > - Número de pessoas que o usuário está seguindo
 > 2. Adicionar:
 > - Informações dos últimos 10 eventos (CreatEvent & PushEvent) do usuário no GitHub
-> 3. [TO-DO] Adicionar:
+> 3. Adicionar:
 > - Quantidade de forks do repositório
 > - Quantidade de estrelas do repositório
 > - Quantidade de watchers do repositório
@@ -149,10 +158,19 @@ A partir disso, foram feitas algumas solicitações:
 
 ### O que eu aprendi
 
-
+Neste projeto eu pude praticar a elaboração de códigos JavaScript e o uso de API para renderizar informações na tela.
 
 ```js
+import { baseUrl } from "../variables.js";
 
+async function getUser(userNick) {
+  const url = `${baseUrl}${userNick}`;
+  const response = await fetch(url);
+
+  return await response.json();
+}
+
+export { getUser };
 ```
 
 ## Autor
