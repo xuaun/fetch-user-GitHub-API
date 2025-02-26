@@ -1,4 +1,5 @@
 import { getUser } from "./services/user.js";
+import { getEvents } from "./services/events.js";
 import { getRepos } from "./services/repositories.js";
 
 import { user } from "./objects/user.js";
@@ -31,7 +32,7 @@ function validateInput(userNick) {
 
 async function getUserData(userNick) {
   const userResponse = await getUser(userNick);
-  // console.log(userResponse) // see API output
+  const eventsResponse = await getEvents(userNick);
   const reposResponse = await getRepos(userNick);
 
   if (reposResponse.message === "Not Found") {
@@ -41,6 +42,7 @@ async function getUserData(userNick) {
   }
 
   user.setInfo(userResponse);
+  user.setEvents(eventsResponse);
   user.setRepositories(reposResponse);
 
   screen.renderUser(user);
