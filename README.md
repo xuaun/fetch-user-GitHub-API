@@ -52,8 +52,8 @@ From this, we needed to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://your-solution-url.com)
-- Live Site URL: [Live Page](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/xuaun/fetch-user-GitHub-API)
+- Live Site URL: [Live Page](https://xuaun.github.io/fetch-user-GitHub-API/)
 
 ## My process
 
@@ -133,8 +133,8 @@ A partir disso, foram feitas algumas solicitações:
 
 ### <p id="links-pt">Links</p>
 
-- Link da solução: [Repositório no GitHub](https://github.com/xuaun/fylo-data-storage-component)
-- Site com a solução: [Página do projeto no ar](https://your-live-site-url.com)
+- Link da solução: [Repositório no GitHub](https://github.com/xuaun/fetch-user-GitHub-API)
+- Site com a solução: [Página do projeto no ar](https://xuaun.github.io/fetch-user-GitHub-API/)
 
 ## Meu processo
 
